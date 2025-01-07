@@ -18,4 +18,5 @@ jobs:
         uses: azure/cli@v1
         with:
           inlineScript: |
-            az storage blob upload-batch --account-name isp2024ncfgsalu -d '$web' -s . --auth-mode login
+            az storage blob upload-batch --account-name isp2024ncfgsalu -d '$web' -s . --auth-mode login --overwrite
+
